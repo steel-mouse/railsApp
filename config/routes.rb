@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  root 'blogs#index'
+
   resources :contacts do
 
   end
@@ -9,6 +11,8 @@ Rails.application.routes.draw do
     collection do
       post :confirm
     end
+
+
   end
 
 # get '/blogs', to: 'blogs#index'
